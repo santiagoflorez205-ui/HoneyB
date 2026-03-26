@@ -1156,7 +1156,7 @@ body {
 
 .step-desc {
   font-size: 0.88rem;
-  color: rgba(253, 246, 227, 0.65);
+  color: var(--muted);
   line-height: 1.65;
   margin: 0;
 }
@@ -1171,7 +1171,7 @@ body {
   border-radius: 4px;
   padding: 1.1rem 1.4rem;
   font-size: 0.86rem;
-  color: rgba(253, 246, 227, 0.72);
+  color: var(--muted);
   line-height: 1.6;
 }
 
@@ -1318,7 +1318,7 @@ body {
 
 .qc-desc {
   font-size: 0.86rem;
-  color: rgba(253, 246, 227, 0.55);
+  color: var(--muted);
   line-height: 1.65;
   margin: 0;
 }
@@ -1327,7 +1327,7 @@ body {
 .invima-note {
   font-size: 0.75rem;
   letter-spacing: 0.06em;
-  color: rgba(253, 246, 227, 0.35);
+  color: var(--muted);
   text-transform: uppercase;
 }
 
@@ -1426,7 +1426,9 @@ body {
   color: var(--amber);
 }
 
-.faq-a-wrap {}
+.faq-a-wrap {
+  display: block;
+}
 
 .faq-a {
   font-size: 0.88rem;
@@ -1491,7 +1493,7 @@ body {
 }
 
 .hspec-val {
-  color: rgba(253, 246, 227, 0.65);
+  color: var(--muted);
   line-height: 1.5;
 }
 
@@ -1513,7 +1515,7 @@ body {
 
 .hotel-reason-item {
   font-size: 0.86rem;
-  color: rgba(253, 246, 227, 0.65);
+  color: var(--muted);
   line-height: 1.6;
   padding: 0.35rem 0;
   border-bottom: 1px solid rgba(245, 166, 35, 0.06);
@@ -1587,16 +1589,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Asegura que el contenedor tenga una forma definida */
-.video-placeholder {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  /* O la proporción que tenga tu imagen original */
-  overflow: hidden;
-  border-radius: 8px;
-  background-color: #000;
-}
+/* (video-placeholder ya definido arriba) */
 
 /* El video se adaptará al contenedor */
 #mainVideo {
